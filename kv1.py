@@ -1,3 +1,3 @@
 n = int(input('n: '))
 for i in range(n):
-    print('\nI\nlike\nBooks')
+    print('\nI\nLike\nTo\nReading\nBooks')
