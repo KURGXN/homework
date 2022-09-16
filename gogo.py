@@ -1,4 +1,4 @@
-a = 2
+a = 3
 while a >= 1:
     a -= 1
     print('\nДень', str(a))
