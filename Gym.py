@@ -3,4 +3,5 @@ height = int(input('Введите ваш рост: '))
 weight = int(input('Введите ваш вес: '))
 
 workout = int(age / 5)
-print('Для вас оптимально заниматься', workout, 'раз в неделю')
+
+print('\nДля вас оптимально заниматься', workout, 'раз в неделю')
