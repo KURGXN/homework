@@ -1,3 +1,4 @@
-n = int(input('n: '))
-for i in range(n):
-    print('Books')
+print('\nДэн Браун\nКОД ДА ВИНЧИ')
+age = int(input('\nСколько вам лет? '))
+print('Кол-во страниц для чтения в день для вас:', age + 5)
+
