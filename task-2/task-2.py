@@ -1,2 +1,7 @@
-print('Книга переведена на арбский и японский языки Робстердом. Н.К.')
-print('#' + str(13 ** 6))
+numbers = []
+
+for number in range(101):
+    numbers.append(number)
+
+print(numbers)
+
