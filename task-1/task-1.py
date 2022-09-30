@@ -1,13 +1,9 @@
-print('Задача 1. Таблица степеней')
+print('Задача 1. Гугл')
 
-numbers = [3,7,5]
+nums_list = []
 
-while True:
-    new_number = input('\nНовое число: ')
-    if new_number == 'Секретное слово':
-        print('Введено секретное слово...')
-        break
-    numbers.append(int(new_number))
-    print('Текущий список чисел:', numbers, '\n')
-    for number in numbers:
-        print(number ** 2, number ** 3, number ** 4)
+for _ in range(int(input('\nКол-во чисел в списке: '))):
+    nums_list.append(int(input('Введите число: ')))
+
+print('\nМаксимальное число в списке:', max(nums_list))
+print('Минимальное число в списке:', min(nums_list))
