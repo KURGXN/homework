@@ -1,21 +1,13 @@
-print('Задача 2. Кратность')
+print('Задача 2. Соседи')
 
-nums_list = []
-nums_count = int(input('\nКол-во чисел в списке: '))
+word_list = list(input('\nВведите строку: '))
+sym_number = int(input('Номер символа: '))
 
-for place in range(nums_count):
-    number = int(input(f'Введите {place + 1} число: '))
-    nums_list.append(number)
+print('\nСимвол слева:', word_list[sym_number - 2], '\nСимвол справа:', word_list[sym_number])
 
-divider = int(input('\nВведите делитель: '))
-print()
-num_index = 0
-index_sum = 0
-
-for number in nums_list:
-    if number % divider == 0:
-        print(f'Индекс числа {number}: ', num_index)
-        index_sum += num_index
-    num_index += 1
-
-print('Сумма индексов:', index_sum)
+if word_list[sym_number - 1] == word_list[sym_number - 2] and word_list[sym_number - 1] == word_list[sym_number]:
+    print('\nЕсть два таких же символа.')
+elif word_list[sym_number - 1] == word_list[sym_number - 2] or word_list[sym_number - 1] == word_list[sym_number]:
+    print('\nЕсть ровно один такой же символ.')
+else:
+    print('\nТаких же символов нет.')

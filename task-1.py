@@ -1,11 +1,14 @@
-print('Задача 1. Гугл')
+print('Задача 1. Текстовый редактор: возвращение')
 
-nums_list = []
-nums_count = int(input('\nКол-во чисел в списке: '))
+word_list = list(input('\nВведите строку:\n'))
+new_word = ''
+replacement = 0
 
-for _ in range(nums_count):
-    new_num = int(input('Введите число: '))
-    nums_list.append(new_num)
+for symbol in word_list:
+    if symbol == ':':
+        new_word += ';'
+        replacement += 1
+    else:
+        new_word += symbol
 
-print('\nМаксимальное число в списке:', max(nums_list))
-print('Минимальное число в списке:', min(nums_list))
+print('\nИсправленная строка:\n', new_word, '\n\nКол-во замен:', replacement)
