@@ -1,14 +1,9 @@
-print('Задача 1. Текстовый редактор: возвращение')
+print('Задача 1. Генерация списка')
 
-word_list = list(input('\nВведите строку:\n'))
-new_word = ''
-replacement = 0
+N = int(input('\nВведите число: '))
+numbers_list = []
 
-for symbol in word_list:
-    if symbol == ':':
-        new_word += ';'
-        replacement += 1
-    else:
-        new_word += symbol
+for number in range(1, N + 1, 2):
+    numbers_list.append(number)
 
-print('\nИсправленная строка:\n', new_word, '\n\nКол-во замен:', replacement)
+print('Список из нечётных чисел от одного до N:', numbers_list)
